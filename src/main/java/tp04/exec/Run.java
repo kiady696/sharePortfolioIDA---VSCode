@@ -17,7 +17,7 @@ public class Run {
     public static void main(String[] args) {
         // test de la classe Cours
         Cours cours = new Cours("CAC40", 20.4, "27/01/2025");
-        System.out.println("Cours 1 : " + cours.toString());
+        System.out.println("Cours 1 : " + cours.toString()); 
  
     }
 
