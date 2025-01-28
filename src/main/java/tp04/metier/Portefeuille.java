@@ -7,6 +7,8 @@ package tp04.metier;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  *
@@ -64,6 +66,16 @@ public class Portefeuille {
                 this.mapLignes.remove(a);
             }
         }        
+    }
+
+    public void verifierChangement(Jour oldJour, Jour newJour, Action action){
+        float oldPrix = action.valeur(oldJour);
+        float newPrix = action.valeur(newJour);
+        float variationPrix = newPrix - oldPrix;
+        if(variationPrix!=0){
+            System.out.println("Le prix du " + action.getLibelle() + " a changé " + variationPrix);
+        }
+        
     }
     
     public String toString() {

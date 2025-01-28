@@ -72,4 +72,12 @@ class PortefeuilleTest {
         portefeuille.vendre(action2, 20);
         assertEquals("{}", portefeuille.toString());
     }
+
+    @Test
+    void testChangePrix(){
+         // Arrange
+         Portefeuille portefeuille = new Portefeuille();
+
+         ActionSimple action1 = new ActionSimple("Action1");// C'est pas fini
+    }
 }
