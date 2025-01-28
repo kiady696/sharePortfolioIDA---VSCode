@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.exec,Run,17,0,0,0,4,0,2,0,2,0
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,ActionSimple,14,26,3,1,3,6,3,2,1,2
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,Cours,54,0,0,0,21,0,9,0,9,0
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,Action,24,24,6,0,8,8,4,4,1,4
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,ActionSimple.Cours,6,12,0,0,2,4,2,1,2,1
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,ActionComposee,47,0,2,0,9,0,4,0,3,0
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,Portefeuille,28,86,3,7,4,15,3,7,1,4
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,Jour,36,27,8,0,12,8,7,2,3,2
+fr.utc.ida.forge.shareportfolioida:sharePortfolioIDA,tp04.metier,Portefeuille.LignePortefeuille,3,23,0,0,1,8,1,4,1,4
