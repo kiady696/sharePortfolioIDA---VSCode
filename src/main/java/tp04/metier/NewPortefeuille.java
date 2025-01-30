@@ -109,7 +109,7 @@ public class NewPortefeuille {
             for (Map.Entry<Action, Integer> entry : portefeuille.entrySet()) {
                 System.out.println("Action : " + entry.getKey().getLibelle() + ", Quantité : " + entry.getValue());
             }
-        }
+
     }
 
 }
