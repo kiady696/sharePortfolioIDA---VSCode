@@ -15,7 +15,7 @@ public class HistoriqueCours {
 
     // Ajouter un cours à l'historique
     public void ajouterCours(Cours cours) {
-        if (cours.getLibelle().equals(this.libelle)) {
+        if (cours.getLibCours().equals(this.libelle)) {
             historique.add(cours);
         } else {
             System.out.println("Le libellé du cours ne correspond pas à l'indice.");
@@ -23,9 +23,9 @@ public class HistoriqueCours {
     }
 
     // Obtenir l'historique des cours pour cet indice
-    public List<Cours> obtenirHistorique(String libelleCours = "") {
+    public List<Cours> obtenirHistorique(String libelleCours) {
         
-        return historique;
+        return this.historique;
     }
 
     // Afficher l'historique des cours
