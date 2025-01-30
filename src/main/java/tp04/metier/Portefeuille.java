@@ -15,27 +15,27 @@ import java.util.TimerTask;
  * @author perussel
  */
 public class Portefeuille {
-    
+
     Map<Action, LignePortefeuille> mapLignes;
-    
+
     private class LignePortefeuille {
-        
+
         private Action action;
-        
+
         private int qte;
-        
+
         public int getQte() {
             return qte;
         }
-        
+
         public void setQte(int qte) {
             this.qte = qte;
         }
-        
+
         public Action getAction() {
             return this.action;
         }
-        
+
         public LignePortefeuille(Action action, int qte) {
             this.action = action;
             this.qte = qte;
@@ -45,11 +45,11 @@ public class Portefeuille {
             return Integer.toString(qte);
         }
     }
-    
+
     public Portefeuille() {
         this.mapLignes = new HashMap();
     }
-    
+
     public void acheter(Action a, int q) {
         if (this.mapLignes.containsKey(a) == false) {
             this.mapLignes.put(a, new LignePortefeuille(a, q));
@@ -65,19 +65,19 @@ public class Portefeuille {
             } else if (this.mapLignes.get(a).getQte() == q) {
                 this.mapLignes.remove(a);
             }
-        }        
+        }
     }
 
-    public void verifierChangement(Jour oldJour, Jour newJour, Action action){
+    public String verifierChangement(Jour oldJour, Jour newJour, Action action) {
         float oldPrix = action.valeur(oldJour);
         float newPrix = action.valeur(newJour);
         float variationPrix = newPrix - oldPrix;
-        if(variationPrix!=0){
-            System.out.println("Le prix du " + action.getLibelle() + " a changé " + variationPrix);
-        }
-        
+
+        String res = "Le prix du " + action.getLibelle() + " a changé " + variationPrix;
+        return res;
+
     }
-    
+
     public String toString() {
         return this.mapLignes.toString();
     }
