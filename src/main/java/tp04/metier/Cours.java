@@ -60,6 +60,11 @@ public class Cours {
                 + getDateValeurCours() + "]";
     }
 
+    public Object getLibelle() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getLibelle'");
+    }
+
     
 
     
